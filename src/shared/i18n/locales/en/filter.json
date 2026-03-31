@@ -1,1 +1,18 @@
-{}
+{
+	"title": "Filter",
+	"apply": "Apply",
+	"cancel": "Cancel",
+	"clear_all": "Clear all parameters",
+	"confirmation": {
+		"title": "Do you want to apply new filter",
+		"message": "Are you sure you want to apply these filters?",
+		"confirm": "Apply new filter",
+		"cancel": "Use old filter"
+	},
+	"empty": "No filters selected",
+	"brand": "WinWinTravel",
+	"debug": {
+		"title": "Current Filter Data (Debug)",
+		"format": "SearchRequestFilter JSON"
+	}
+}
