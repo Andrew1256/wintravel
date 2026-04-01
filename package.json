@@ -64,13 +64,12 @@
 		"vitest": "^1.6.1"
 	},
 	"lint-staged": {
-		"**/*.{js,ts,tsx}": [
-			"prettier --write",
-			"pnpm exec eslint --fix"
-		],
-		"!src/shared/ui/Checkbox/Checkbox.tsx": [
-			"prettier --write",
-			"pnpm exec eslint --fix"
-		]
-	}
+  "src/shared/ui/Checkbox/Checkbox.tsx": [
+    "pnpm exec eslint --fix"
+  ],
+  "**/!(Checkbox).{js,ts,tsx}": [
+    "prettier --write",
+    "pnpm exec eslint --fix"
+  ]
+}
 }
