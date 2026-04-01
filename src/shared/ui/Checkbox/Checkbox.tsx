@@ -7,8 +7,7 @@ const cn = (...inputs: ClassValue[]) => {
 	return twMerge(clsx(inputs))
 }
 
-export interface CheckboxProps
-	extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
 	label?: string
 }
 
