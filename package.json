@@ -10,7 +10,7 @@
 		"lint:file": "eslint --report-unused-disable-directives --max-warnings 0",
 		"format:all": "prettier --log-level warn --write .",
 		"format:check:all": "prettier --check . || (prettier --write . && git diff --exit-code src/shared/ui/Checkbox/Checkbox.tsx && exit 1)",
-		"format:file": "prettier --log-level warn --write --print-width 100",
+		"format:file": "prettier --log-level warn --write",
 		"preview": "vite preview",
 		"prepare": "husky install",
 		"test": "vitest",
@@ -64,8 +64,12 @@
 		"vitest": "^1.6.1"
 	},
 	"lint-staged": {
-		"*.{ts,tsx}": [
-			"pnpm format:file",
+		"**/*.{js,ts,tsx}": [
+			"prettier --write",
+			"pnpm exec eslint --fix"
+		],
+		"!src/shared/ui/Checkbox/Checkbox.tsx": [
+			"prettier --write",
 			"pnpm exec eslint --fix"
 		]
 	}
