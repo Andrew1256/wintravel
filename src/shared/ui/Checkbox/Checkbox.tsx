@@ -45,7 +45,7 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
 					{/* Tick SVG */}
 					<svg
 						className={
-							'absolute h-5 w-5 scale-0 stroke-[#0073FF] opacity-0 transition-all peer-checked:scale-[1.1] peer-checked:opacity-100 pointer-events-none overflow-visible'
+							'absolute h-5 w-5 scale-0 stroke-[#0073FF] opacity-0 transition-all peer-checked:scale-[1.1] peer-checked:opacity-100'
 						}
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
